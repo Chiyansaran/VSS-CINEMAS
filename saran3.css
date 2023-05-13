@@ -1,0 +1,79 @@
+/* general styles */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 1rem;
+  text-align: center;
+}
+
+.container {
+  max-width: 800px;
+  margin: 2rem auto;
+  padding: 1rem;
+  border: 1px solid #ccc;
+}
+
+h2 {
+  margin-top: 2rem;
+}
+
+button {
+  display: block;
+  margin-top: 2rem;
+  padding: 1rem 2rem;
+  background-color: #333;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #666;
+}
+
+/* form styles */
+select,
+input[type="datetime-local"] {
+  display: block;
+  width: 100%;
+  padding: 0.5rem;
+  margin-top: 1rem;
+  font-size: 1rem;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+}
+
+/* seat selection styles */
+.seat {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  margin: 0.5rem;
+  background-color: #ccc;
+  border: 1px solid #aaa;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.seat.selected {
+  background-color: #333;
+  color: #fff;
+}
+
+.seat.occupied {
+  background-color: #aaa;
+  cursor: not-allowed;
+}

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Movie Ticket Booking</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <header>
+      <h1>Movie Ticket Booking</h1>
+    </header>
+    
+    <div class="container">
+      <h2>Select a Movie</h2>
+      <select id="movieSelect">
+        <option value="">--Select a movie--</option>
+        <option value="Avengers: Endgame">Avengers: Endgame</option>
+        <option value="The Lion King">The Lion King</option>
+        <option value="Joker">Joker</option>
+        <option value="Frozen 2">Frozen 2</option>
+      </select>
+      
+      <h2>Select a Theater</h2>
+      <select id="theaterSelect">
+        <option value="">--Select a theater--</option>
+        <option value="AMC Theatres">AMC Theatres</option>
+        <option value="Regal Cinemas">Regal Cinemas</option>
+        <option value="Cinemark Theatres">Cinemark Theatres</option>
+        <option value="Cineplex">Cineplex</option>
+      </select>
+      
+      <h2>Select a Showtime</h2>
+      <input type="datetime-local" id="showtimeInput">
+      
+      <h2>Select a Seat</h2>
+      <div id="seatSelection">
+        <!-- seat selection UI will be generated dynamically using JavaScript -->
+      </div>
+      <!-- your movie ticket booking page HTML code -->
+<div class="container">
+  <!-- your form elements here -->
+
+  <button id="submit-btn">Book Now</button>
+</div>
+
+<script>
+  const submitBtn = document.getElementById("submit-btn");
+
+  submitBtn.addEventListener("click", () => {
+    // redirect to thank you page
+    window.location.href = "thank.html";
+  });
+</script>
+
+    </div>
+    
+    <script src="script.js"></script>
+  </body>
+</html>
